@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="section">
 		<header>
 			<h4 class="header">¿CÓMO FUNCIONAMOS?</h4>
 		</header>
@@ -40,7 +40,7 @@
 						<img src="../assets/recibe_el_dinero.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
 					</div>
 					<div class="card-body">
-						<h5 class="card-title">RECIBE EL DINERO EN MENOS DE 24 HORAS</h5>
+						<h5 class="card-title horas">RECIBE EL DINERO EN MENOS DE 24 HORAS</h5>
 						<hr>
 						<p class="card-text">Una vez recibida tu documentación en menos de 24 horas te depositamos tu crédito en la cuenta bancaria donde recibes tu nómina.</p>
 					</div>
@@ -52,7 +52,7 @@
 
 <script>
 export default {
-	name: "ComoFuncionamos"
+	name: 'ComoFuncionamos'
 }
 </script>
 
@@ -62,13 +62,19 @@ export default {
 		color: #745B6F;
 		margin-top: 5%;
 	}
+	.container {
+		height: 90%;
+	}
 	.card {
 		margin-left: auto;
 		margin-right: auto;
 		border: 0;
 	}
+	.horas {
+		font-size: 1.2rem;
+	}
 	.img {
-		width: 130px
+		width: 130px;
 	}
 	.image-center {
 		display: flex;
@@ -83,6 +89,15 @@ export default {
 	}
 	.row {
 		margin-top: 5%;
+	}
+	.section{
+		height: 85vh;
+	}
+	hr {
+		height: 1px;
+		color: #988095;
+		background-color: #988095;
+		border: none;
 	}
 </style>
 
