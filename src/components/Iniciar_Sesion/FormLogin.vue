@@ -4,26 +4,26 @@
 			<div class="container cont">
 				<h5 class="header">INICIAR SESIÓN</h5>
 				<p>Correo<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
-					<br>
-					<p>Contraseña<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
-					<br>
-					<div class="row button">
-						<button>INICIAR SESIÓN</button>
-					</div>
-					<div class="a">
-						<a href="#">¿Olvidaste tu contraseña?</a>
-					</div>
-					<hr>
-					<p class="center">¿Aún no estás registrado?</p>
-					<div class="row button">
-						<button>¡Regístrate Aquí!</button>
-					</div>
+				<div class="row">
+					<input class="input" type="text" placeholder="">
+				</div>
+				<br>
+				<p>Contraseña<span>*</span></p>
+				<div class="row">
+					<input class="input" type="text" placeholder="">
+				</div>
+				<br>
+				<div class="row button">
+					<button>INICIAR SESIÓN</button>
+				</div>
+				<div class="a">
+					<router-link to="/mail">¿Olvidaste tu contraseña?</router-link>
+				</div>
+				<hr>
+				<p class="center">¿Aún no estás registrado?</p>
+				<div class="row button">
+					<button><router-link to="/registro">¡Regístrate Aquí!</router-link></button>
+				</div>
 			</div>
 		</div>
 	</form>
@@ -83,6 +83,11 @@ export default {
 	.a {
 		margin-top: 15%;
 		margin-bottom: 20%;
+	}
+	button a {
+		color: black !important;
+		text-decoration: none;
+		background-color: transparent !important;
 	}
 	hr {
 		height: 1px;

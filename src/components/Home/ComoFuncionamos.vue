@@ -87,6 +87,9 @@ export default {
 		margin-top: 1rem;
 		margin-bottom: 1.5rem;
 	}
+	.card-text {
+		text-align: justify;
+	}
 	.row {
 		margin-top: 5%;
 	}
@@ -98,6 +101,16 @@ export default {
 		color: #988095;
 		background-color: #988095;
 		border: none;
+	}
+	@media only screen and (device-width:768px) {
+		.section {
+			margin-bottom: 15%;
+		}
+		.card {
+			margin-left: 3.7rem;
+			margin-right: 3.7rem;
+			border: 0;
+		}
 	}
 </style>
 

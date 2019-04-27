@@ -3,15 +3,15 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="container">
-					<h3 class="h3">AXELERA</h3>
-					<h3>PERSONAL</h3>
+					<h3 class="h3">FORMULARIO</h3>
+					<h3>DE SOLICITUD</h3>
 					<hr>
-					<p>CRÉDITO PERSONALIZADO QUE PUEDES SOLICITAR EN LÍNEA DE MANERA ÁGIL, RÁPIDA Y SENCILLA. OFRECEMOS TASAS COMPETITIVAS, NO COBRAMOS COMISIONES NI SOLICITAMOS AVAL. LA TASA DE INTERÉS ES FIJA Y LOS PLAZOS SON FLEXIBLES. NUESTROS CRÉDITOS ESTÁN ASEGURADOS EN CASO DE FALLECIMIENTO, INVALIDEZ TOTAL O PERMANENTE.</p>
+					<p>AYÚDANOS LLENANDO EL FORMULARIO Y OBTÉN UNA PRE-AUTORIZACIÓN DE TU CRÉDITO EN MENOS DE 24 HORAS, EL PROCESO ES BREVE Y NO TE TOMARÁ MÁS DE 5 MINUTOS COMPLETARLO.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding">
 				<div class="image">
-					<img src="../../assets/personal3.jpg">
+					<img src="../../assets/formulario.jpg">
 				</div>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-	name: 'PersonalImagen'
+	name: 'SolicitudImagen'
 }
 </script>
 
@@ -34,10 +34,7 @@ export default {
 		height: 100%;
 	}
 	img {
-		/* width: 840px;
-		height: 720px; */
 		max-width: 100%;
-		/* max-height: 100vh; */
 		margin: auto;
 	}
 	.no-padding {
