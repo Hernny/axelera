@@ -1,61 +1,81 @@
 <template>
-	<form>
-		<div class="form">
-			<div class="container cont">
-				<h5 class="header">¡ Regístrate !</h5>
-				<p>Nombre de usuario<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
-					<br>
-					<p>Correo<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
-					<br>
-					<p>Contraseña<span>*</span></p>
-						<div class="row">
-							<input class="input" type="text" placeholder="">
+	<div>
+		<Navbar/>
+		<form class="container-fluid height">
+			<div class="form-body container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="form">
+							<div class="container cont">
+								<h5 class="header">¡ Regístrate !</h5>
+								<p>Nombre de usuario<span>*</span></p>
+									<div class="row">
+										<input class="input" type="text" placeholder="">
+									</div>
+									<br>
+									<p>Correo<span>*</span></p>
+									<div class="row">
+										<input class="input" type="text" placeholder="">
+									</div>
+									<br>
+									<p>Contraseña<span>*</span></p>
+										<div class="row">
+											<input class="input" type="text" placeholder="">
+										</div>
+									<br>
+									<p>Confirmar contraseña<span>*</span></p>
+										<div class="row">
+											<input class="input" type="text" placeholder="">
+										</div>
+									<div class="row button">
+										<button><router-link to="/iniciar-sesion">Registrarse</router-link></button>
+									</div>
+									<hr>
+									<p class="center">¿Ya tienes cuenta? <span><router-link to="/iniciar-sesion">Inicia Sesión</router-link></span></p>
+							</div>
 						</div>
-					<br>
-					<p>Confirmar contraseña<span>*</span></p>
-						<div class="row">
-							<input class="input" type="text" placeholder="">
-						</div>
-					<div class="row button">
-						<button><router-link to="/iniciar-sesion">Registrarse</router-link></button>
 					</div>
-					<hr>
-					<p class="center">¿Ya tienes cuenta? <span><router-link to="/iniciar-sesion">Inicia Sesión</router-link></span></p>
+				</div>
 			</div>
-		</div>
-	</form>
+		</form>
+	</div>
 </template>
 
 <script>
+import Navbar from '../Navbar/Navbar.vue';
 export default {
-  name: 'FormRegistro'
+	name: 'FormRegistro',
+	components: {
+		Navbar
+	}
 }
 </script>
 
 <style scoped>
+	.height {
+		height: 100vh !important;
+		margin-top: 0.5rem;
+	}
 	.cont {
 		padding-top: 15px;
     padding-left: 45px;
     padding-right: 45px;
+		margin-top: 3rem;
 	}
 	.center {
 		text-align: center;
 		margin-top: 15%;
 		margin-bottom: 10%;
 	}
+	.form-body {
+		display:flex;
+		justify-content: center;
+	}
 	.form {
 		background-color: white;
 		width: 25rem;
-		height: 43rem;
+		height: 90vh;
 		border-radius: 15px;
-		margin-top: 10%;
-		margin-bottom: 10%;
 	}
 	.header {
 		text-align: center;
